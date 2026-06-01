@@ -3,5 +3,5 @@ numpy>=1.21
 scikit-learn==1.7.2
 joblib>=1.1
 tensorflow==2.15.0
-matplotlib
-pandas
+matplotlib==3.10.0
+pandas==2.2.3
