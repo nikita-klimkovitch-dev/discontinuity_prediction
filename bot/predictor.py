@@ -99,7 +99,7 @@ class ZonePredictator:
             pred_data[:, 0] = np.round(pred_data[:, 0])
             pred_data[:, 3] = np.round(pred_data[:, 3])
         else:
-            print('error')
+            print('Отсутствуют некоторые файлы скалеров или моделей (с большой вероятностью это файл model_2_zones_part_5 и/или model_2_zones_part_6)')
             return None
    
         

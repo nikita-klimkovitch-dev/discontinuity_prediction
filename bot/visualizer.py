@@ -138,22 +138,22 @@ def plot_zones(num_zones, pred_data, displ, output_size=(800, 600)):
         plt.Line2D([0], [0], color='green', linewidth=2, label='Анкера')
     ]
 
-    ax.text(0, 1.3, f'{-displ[0]}мм', 
+    ax.text(0, 1.3, f'{np.round(-displ[0].item(), 2)}мм', 
                 fontsize=8, color='white', 
                 ha='center', va='bottom',
                 bbox=dict(boxstyle='round,pad=0.2', facecolor='white', alpha=0.7))
 
-    ax.text(1.1, 0, f'{-displ[1]}мм', 
+    ax.text(1.1, 0, f'{np.round(-displ[1].item(), 2)}мм', 
                 fontsize=8, color='white', 
                 ha='center', va='bottom',
                 bbox=dict(boxstyle='round,pad=0.2', facecolor='white', alpha=0.7))
 
-    ax.text(-1.1, 0, f'{-displ[1]}мм', 
+    ax.text(-1.1, 0, f'{np.round(-displ[1].item(), 2)}мм', 
                 fontsize=8, color='white', 
                 ha='center', va='bottom',
                 bbox=dict(boxstyle='round,pad=0.2', facecolor='white', alpha=0.7))
 
-    ax.text(0, -1.4, f'{displ[2]}мм', 
+    ax.text(0, -1.4, f'{np.round(displ[2].item(), 2)}мм', 
                 fontsize=8, color='white', 
                 ha='center', va='bottom',
                 bbox=dict(boxstyle='round,pad=0.2', facecolor='white', alpha=0.7))
